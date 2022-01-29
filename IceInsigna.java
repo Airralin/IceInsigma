@@ -43,15 +43,13 @@ public class IceInsigna implements KeyListener, MouseListener
     public ArrayList<Character> Char = new ArrayList<Character>();
     GridLayout grid;
     public ArrayList<Character> playable = new ArrayList<Character>();
-    public void hi()
-    {
-       playable.add(new Character(1,22,7,6,3,8,false,lord,11,3)); 
-    }
+    
     
     IceInsigna()
     {
       grid = new GridLayout( ROWS,COLS );
       frame.setLayout( grid );
+      playable.add(new Character(1,22,7,6,3,8,false,lord,11,3)); 
       //Create JButtons initialize to red, activate listeners, 
       for (int r=0; r < button.length; r++)
       {
@@ -68,7 +66,7 @@ public class IceInsigna implements KeyListener, MouseListener
       {
           int ROW = p.getRow();
           int COL = p.getCol();
-          System.out.println(COL);
+          
           button[ROW][COL].setIcon(p.getPic());
           
           
