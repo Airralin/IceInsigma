@@ -28,8 +28,9 @@ public class Main {
         ImageIcon lord = new ImageIcon("src/character-icons/Lord.png");
         //
         Map map = new Map(ROWS, COLS);
-        Character Chrom = new Character(1,22,7,6,3,8,false,lord);
-        map.placeCharacter(Chrom, 11,3);
+        Sword LordBlade = new Sword(6,3,20,1,true,true);
+        Character Lina = new Character(LordBlade,22,7,6,3,8,false,lord);
+        map.placeCharacter(Lina, 11,3);
         //
         //Create JButtons initialize, activate listeners,
         JFrame frame = map.getMapFrame();

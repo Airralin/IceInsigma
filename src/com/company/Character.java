@@ -3,7 +3,7 @@ import javax.swing.ImageIcon;
 import java.util.ArrayList;
 public class Character
 {
-    private int WEAPON;
+    private Weapon WEAPON;
     private int HP;
     private int ATTACK;
     private int DEFENCE;
@@ -11,7 +11,7 @@ public class Character
     private int SPEED;
     private boolean WEAKARROWS;
     private ImageIcon ART;
-    public Character(int w,int h,int att, int d, int res, int s, boolean wa,ImageIcon art)
+    public Character(Weapon w,int h,int att, int d, int res, int s, boolean wa,ImageIcon art)
     {
         WEAPON=w;
         HP=h;
@@ -27,7 +27,7 @@ public class Character
     {
 
     }
-    public int getWeapon()
+    public Weapon getWeapon()
     {
         return WEAPON;
     }
